@@ -1,0 +1,28 @@
+.main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.focus {
+  border: 5px solid;
+  border-color: rgb(106, 106, 239);
+}
+
+.error {
+  border: 5px solid;
+  border-color: rgb(255, 66, 66);
+}
+
+.valid {
+  border: 5px solid;
+  border-color: rgb(134, 249, 142);
+}
