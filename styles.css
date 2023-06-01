@@ -1,15 +1,32 @@
+:root {
+  --color-blue: rgb(173, 162, 255);
+  --color-red: rgb(255, 66, 66);
+  --color-green: rgb(134, 249, 142);
+
+  --base-font-size: 12px;
+
+  --global-size-xs: 5px;
+  --global-size-s: 10px;
+  --global-size-m: 20px;
+  --global-size-l: 40px;
+  --global-size-xl: 50px;
+}
+
 .main {
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 50px;
+  padding: var(--global-size-xl);
   flex-direction: column;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--global-size-s);
+  border: solid 5px var(--color-blue);
+  border-radius: var(--global-size-m);
+  padding: var(--global-size-xl);
 }
 
 .form-group {
@@ -17,24 +34,40 @@
   flex-direction: column;
 }
 
+.form-text {
+  font-weight: bolder;
+}
+
 .input {
-  border: 5px solid;
-  border-radius: 5px;
+  border: var(--global-size-xs) solid;
+  border-radius: var(--global-size-xs);
 }
 
 .input-focus:focus {
-  border: solid rgb(106, 106, 239);
+  border: solid var(--color-blue);
   outline: none;
 }
 
 .input-error {
-  border-color: rgb(255, 66, 66);
+  border-color: var(--color-red);
 }
 
 .input-valid:valid {
-  border-color: rgb(134, 249, 142);
+  border-color: var(--color-green);
 }
 
 .input-valid:invalid + span::before {
-  content: "this form is invalid";
+  content: "invalid";
+}
+
+.button {
+  margin: var(--global-size-m);
+  color: var(--color-blue);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: solid;
+  border-color: var(--color-blue);
 }
