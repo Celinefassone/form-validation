@@ -12,17 +12,29 @@
   gap: 10px;
 }
 
-.focus {
-  border: 5px solid;
-  border-color: rgb(106, 106, 239);
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.error {
+.input {
   border: 5px solid;
+  border-radius: 5px;
+}
+
+.input-focus:focus {
+  border: solid rgb(106, 106, 239);
+  outline: none;
+}
+
+.input-error {
   border-color: rgb(255, 66, 66);
 }
 
-.valid {
-  border: 5px solid;
+.input-valid:valid {
   border-color: rgb(134, 249, 142);
+}
+
+.input-valid:invalid + span::before {
+  content: "this form is invalid";
 }

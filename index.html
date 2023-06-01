@@ -10,38 +10,49 @@
   <body>
     <main class="main">
       <form class="form">
-        <label for="normal"> </label>
-        <input
-          class="normal"
-          type="text"
-          name="normal"
-          id="normal"
-          placeholder="normal"
-        />
-        <label for="focus"> </label>
-        <input
-          class="focus"
-          type="text"
-          name="focus"
-          id="focus"
-          placeholder="focus"
-        />
-        <label for="error"> </label>
-        <input
-          class="error"
-          type="text"
-          name="error"
-          id="error"
-          placeholder="error"
-        />
-        <label for="valid"> </label>
-        <input
-          class="valid"
-          type="text"
-          name="valid"
-          id="valid"
-          placeholder="email"
-        />
+        <div class="form-group">
+          <label for="normal"> </label>
+          <input
+            class="input-normal"
+            type="text"
+            name="normal"
+            placeholder="normal"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="focus"> </label>
+          <input
+            class="input-focus"
+            type="text"
+            name="focus"
+            placeholder="focus"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="error"> </label>
+          <input
+            class="input-error"
+            type="text"
+            name="error"
+            placeholder="error"
+          />
+          <small> error</small>
+        </div>
+
+        <div class="form-group">
+          <label for="valid"> </label>
+          <input
+            class="input-valid"
+            type="email"
+            name="email"
+            placeholder="email"
+            value="na@me@example.com"
+            required
+          />
+          <span> </span>
+        </div>
       </form>
     </main>
     <script type="module" src="/src/main.js"></script>
